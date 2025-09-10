@@ -1,270 +1,955 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ayush Vashisth Portfolio</title>
     <link rel="stylesheet" href="main.css" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <style>
-        /* CSS will be added here */
+      /* CSS will be added here */
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="menu-icon" onclick="toggleNav()">
-        <i class='bx bx-menu'></i>
+      <i class="bx bx-menu"></i>
     </div>
 
     <nav class="side-nav" id="sideNav">
-        <div class="close-icon" onclick="toggleNav()">&#10005;</div>
-        <div class="profile-section">
-            <img src="images/profile.jpg" alt="Profile" class="profile-img" />
-            <div class="profile-name" style="color: whitesmoke; font-size: xx-large; font-family: 'Times New Roman', Times, serif;">Ayush Vashisth</div>
-            <div class="social-links">
-                
-                
-                <a href="https://github.com/ayushvashisth1" target="_blank"><img src="images/GitHub-Mark-ea2971cee799.png" alt="GitHub" /></a>
-                <a href="https://www.linkedin.com/in/ayush-vashisth-59015a27a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="images/linkdin.png" alt="LinkedIn" /></a>
-            </div>
+      <div class="close-icon" onclick="toggleNav()">&#10005;</div>
+      <div class="profile-section">
+        <img src="images/profile.jpg" alt="Profile" class="profile-img" />
+        <div
+          class="profile-name"
+          style="
+            color: whitesmoke;
+            font-size: xx-large;
+            font-family: 'Poppins' 'Times New Roman', Times, serif;
+          "
+        >
+         <!-- <div class="social-links">
+          <a href="https://github.com/ayushvashisth1" target="_blank"
+            ><img src="images/GitHub-Mark-ea2971cee799.png" alt="GitHub"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/ayush-vashisth-59015a27a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            ><img src="images/linkdin.png" alt="LinkedIn"
+          /></a>
+        </div> -->
+          Ayush Vashisth
         </div>
-        <ul>
-            <li><a href="#home" onclick="toggleNav()">Home</a></li>
-            <li><a href="#about" onclick="toggleNav()">About</a></li>
-            <li><a href="#projects" onclick="toggleNav()">Projects</a></li>
-            <li><a href="#education" onclick="toggleNav()">Education</a></li>
-            <li><a href="#experience" onclick="toggleNav()">Experience</a></li>
-            <li><a href="#certificate" onclick="toggleNav()">Certificate</a></li>
-            <li><a href="#resume" onclick="toggleNav()">Resume</a></li>
-            <li><a href="#contact" onclick="toggleNav()">Contact</a></li>
-        </ul>
+         
+<ul class="example-2">
+  <li class="icon-content">
+    <a
+      href="https://www.linkedin.com/in/ayush-vashisth-59015a27a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+      aria-label="LinkedIn"
+      data-social="linkedin"
+    >
+      <div class="filled"></div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-linkedin"
+        viewBox="0 0 16 16"
+        xml:space="preserve"
+      >
+        <path
+          d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+          fill="currentColor"
+        ></path>
+      </svg>
+    </a>
+    <div class="tooltip">LinkedIn</div>
+  </li>
+  <li class="icon-content">
+    <a href="https://github.com/ayushvashisth1" aria-label="GitHub" data-social="github">
+      <div class="filled"></div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-github"
+        viewBox="0 0 16 16"
+        xml:space="preserve"
+      >
+        <path
+          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+          fill="currentColor"
+        ></path>
+      </svg>
+    </a>
+    <div class="tooltip">GitHub</div>
+  </li>
+
+</ul>
+
+      <ul>
+        <li><a href="#home" onclick="toggleNav()">Home</a></li>
+        <li><a href="#about" onclick="toggleNav()">About</a></li>
+        <li><a href="#projects" onclick="toggleNav()">Projects</a></li>
+        <li><a href="#education" onclick="toggleNav()">Education</a></li>
+        <li><a href="#experience" onclick="toggleNav()">Experience</a></li>
+        <li><a href="#certificate" onclick="toggleNav()">Certificate</a></li>
+        <li><a href="#resume" onclick="toggleNav()">Resume</a></li>
+        <li><a href="#contact" onclick="toggleNav()">Contact</a></li>
+      </ul>
     </nav>
 
-   <section id="home" style="background-image: url('images/home2.png'); background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; text-align: center; padding-top: 10vh;">
-    <h1 style="font-size: 4.5em; color: #00FFFF; text-shadow: 3px 3px 6px rgba(0,0,0,0.8); margin-bottom: 0.1em;">Ayush Vashisth</h1><br><br><br><br>
-    <p style="font-size: 1.8em; color: gold; text-shadow: 2px 2px 5px rgba(0,0,0,0.7);">I'm a Computer Science Enthusiast</p>
-</section>
-    <section id="about" style="background-image: url('images/edi-simetzberger-hDIvRspapeM-unsplash.jpg'); background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; text-align: center; padding-top: 10vh;">
-        <h2 style="color: white; font-size: xx-large;">About</h2>
-        <div class="about-container">
-            <div class="left-content">
-           <p class="intro" style="font-family: 'Times New Roman', Times, serif;">
-    <span style="color:#004d99; font-weight: bold;">Ayush Vashisth</span><br />
-    <span style="color:black; font-size: 0.9em;">Computer Science Student  </span><span style="color:black">AIR 40237 Joint Entrance Examination (2023)</span><br />
-    <span style="color: black; font-size: 0.9em;">National </span><span style="color:black;">Gold Medalist</span><span style="color: black;"> (Drop Roball) <br> </span><span style="color:black;">Gold Medalist</span><span style="color: black;"> U-17 Baseball</span><br />
-    <span style="color:black;">Ex Student Liaison Team Member </span><span style="color: #004d99;">@Training and Placement Cell - UIET MDU</span>
-</p>
-<div class="info" style="font-family: 'Times New Roman', Times, serif;">
-    <p><strong style="color: #004d99;">Name:</strong> <span style="color: black;">Ayush Vashisth</span></p>
-    <p><strong style="color: #004d99;">Date of Birth:</strong> <span style="color:black;">2nd October 2004</span></p>
-    <p><strong style="color: #004d99;">Email:</strong> <span style="color: black;">ayushvashisth04@gmail.com</span></p>
-    <p><strong style="color: #004d99;">Location:</strong> <span style="color: black;">India</span></p>
-    <p><strong style="color: #004d99;">Skills:</strong> <span style="color: black;">Python, Data Science, Data Structures & Algorithms, Web Development</span></p>
-</div>
-            </div>
-            <div class="right-img">
-                <img src="images/ayushoffice.jpg" alt="Ayush Vashisth">
-            </div>
+    <section
+      id="home"
+      style="
+        background-image: url('images/home2.png');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        padding-top: 10vh;
+      "
+    >
+      <h1
+        style="
+          font-size: 4.5em;
+          color: #00ffff;
+          text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+          margin-bottom: 0.1em;
+        "
+      >
+        Ayush Vashisth
+      </h1>
+      <br /><br /><br /><br />
+      <button class="cta" onclick="scrollToProjects()">
+  <span class="span">My Projects</span>
+  <span class="second">
+    <svg
+      width="50px"
+      height="20px"
+      viewBox="0 0 66 43"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <g
+        id="arrow"
+        stroke="none"
+        stroke-width="1"
+        fill="none"
+        fill-rule="evenodd"
+      >
+        <path
+          class="one"
+          d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
+          fill="#FFFFFF"
+        ></path>
+        <path
+          class="two"
+          d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
+          fill="#FFFFFF"
+        ></path>
+        <path
+          class="three"
+          d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
+          fill="#FFFFFF"
+        ></path>
+      </g>
+    </svg>
+  </span>
+</button>
+
+      <p
+        style="
+          font-size: 1.8em;
+          color: gold;
+          text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        "
+      >
+        I'm a Computer Science Enthusiast
+      </p>
+    </section>
+    <section
+      id="about"
+      style="
+        background-image: url('images/edi-simetzberger-hDIvRspapeM-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        padding-top: 10vh;
+      "
+    >
+      <h2 style="color: white; font-size: xx-large">About</h2>
+      <div class="about-container">
+        <div class="left-content">
+          <p class="intro" style="font-family: 'Poppins', Times, serif">
+            <span style="font-size: x-large; color: #004d99; font-weight: bold"
+              >Ayush Vashisth</span
+            ><br />
+            <span style="color: black; font-size: 0.9em"
+              >Computer Science Student </span
+            ><span style="color: black"
+              >AIR 40237 Joint Entrance Examination (2023)</span
+            ><br />
+            <span style="color: black; font-size: 0.9em">National </span
+            ><span style="color: black">Gold Medalist</span
+            ><span style="color: black"> (Drop Roball) <br /> </span
+            ><span style="color: black">Gold Medalist</span
+            ><span style="color: black"> U-17 Baseball</span><br />
+            <span style="color: black">Ex Student Liaison Team Member </span
+            ><span style="color: #004d99"
+              >@Training and Placement Cell - UIET MDU</span
+            >
+          </p>
+          <div class="info" style="font-family: 'Poppins', Times, serif">
+            <p>
+              <strong style="color: #004d99">Date of Birth:</strong>
+              <span style="color: black">2nd October 2004</span>
+            </p>
+            <p>
+              <strong style="color: #004d99">Email:</strong>
+              <span style="color: black">ayushvashisth04@gmail.com</span>
+            </p>
+            <p>
+              <strong style="color: #004d99">Location:</strong>
+              <span style="color: black">India</span>
+            </p>
+            <p>
+              <strong style="color: #004d99">Skills:</strong>
+              <span style="color: black"
+                >Python, Data Science, Data Structures & Algorithms, Web
+                Development</span
+              >
+            </p>
+          </div>
         </div>
+        <div class="right-img">
+          <img src="images/ayushoffice.jpg" alt="Ayush Vashisth" />
+        </div>
+      </div>
     </section>
 
-    <section id="education"  id="about" style="background-image: url('images/domenico-loia-hGV2TfOh0ns-unsplash.jpg'); background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; text-align: center; padding-top: 10vh;">
-        <h2 style="color: black; font-size: xx-large;">Education</h2>
-        <div class="education-table">
-            <div class="edu-row" style="background-color: white; color: black;">
-                <div class="edu-institute" style="font-family: 'Times New Roman', Times, serif;">🎓 Maharshi Dayanand University</div>
-                <div class="edu-degree" style="font-family: 'Times New Roman', Times, serif;">💻 B.Tech, Computer Science</div>
-                <div class="edu-dates" style="font-family: 'Times New Roman', Times, serif;"> 🗓️ Sep 2023 – Present</div>
-            </div>
-            <div class="edu-row" style="background-color: white; color: black;">
-                <div class="edu-institute" style="font-family: 'Times New Roman', Times, serif;">🏫 Shiksha Bharti Sr Sec School, Rohtak</div>
-                <div class="edu-degree" style="font-family: 'Times New Roman', Times, serif;"> 🔬 10+2, Non-Medical</div>
-                <div class="edu-dates" style="font-family: 'Times New Roman', Times, serif;"> ✅ Completed</div>
-            </div>
-            <div class="edu-row" style="background-color: white; color: black;">
-                <div class="edu-institute" style="font-family: 'Times New Roman', Times, serif;">🚀 Indian Institute of Remote Sensing (IIRS), ISRO</div>
-                <div class="edu-degree" style="font-family: 'Times New Roman', Times, serif;">🛰️ Global Navigation Satellite System</div>
-                <div class="edu-dates" style="font-family: 'Times New Roman', Times, serif;">🗓️ Sep 2024 – Oct 2024</div>
-            </div>
+    <section
+      id="education"
+      id="about"
+      style="
+        background-image: url('images/domenico-loia-hGV2TfOh0ns-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        padding-top: 10vh;
+      "
+    >
+      <h2 style="color: black; font-size: xx-large">Education</h2>
+      <div class="education-table">
+        <div class="edu-row" style="background-color: white; color: black">
+          <div
+            class="edu-institute"
+            style="font-family: 'Times New Roman', Times, serif"
+          >
+            🎓 Maharshi Dayanand University
+          </div>
+          <div
+            class="edu-degree"
+            style="font-family: 'Times New Roman', Times, serif"
+          >
+            💻 B.Tech, Computer Science
+          </div>
+          <div
+            class="edu-dates"
+            style="font-family: 'Times New Roman', Times, serif"
+          >
+            🗓️ Sep 2023 – Present
+          </div>
         </div>
+        <div class="edu-row" style="background-color: white; color: black">
+          <div
+            class="edu-institute"
+            style="font-family: 'Times New Roman', Times, serif"
+          >
+            🏫 Shiksha Bharti Sr Sec School, Rohtak
+          </div>
+          <div
+            class="edu-degree"
+            style="font-family: 'Times New Roman', Times, serif"
+          >
+            🔬 10+2, Non-Medical
+          </div>
+          <div
+            class="edu-dates"
+            style="font-family: 'Times New Roman', Times, serif"
+          >
+            ✅ Completed
+          </div>
+        </div>
+        <div class="edu-row" style="background-color: white; color: black">
+          <div
+            class="edu-institute"
+            style="font-family: 'Times New Roman', Times, serif"
+          >
+            🚀 Indian Institute of Remote Sensing (IIRS), ISRO
+          </div>
+          <div
+            class="edu-degree"
+            style="font-family: 'Times New Roman', Times, serif"
+          >
+            🛰️ Global Navigation Satellite System
+          </div>
+          <div
+            class="edu-dates"
+            style="font-family: 'Times New Roman', Times, serif"
+          >
+            🗓️ Sep 2024 – Oct 2024
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="projects" style="background-image: url('images/arnold-francisca-f77Bh3inUpE-unsplash.jpg'); background-size: cover; background-position: center; display: flex; flex-direction: column; align-items: center; padding-top: 10vh; padding-bottom: 5vh; color: #fff; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">
-  <h2 style="font-size: 2.5em; font-family: 'Playfair Display', serif; margin-bottom: 30px; letter-spacing: 2px;">Projects</h2>
-  
-  <div class="projects-container" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; width: 90%; max-width: 1200px; padding: 20px; overflow-y: auto; height: 70vh; scrollbar-width: thin; scrollbar-color: #007bff #f1f1f1; border-radius: 10px; background-color: rgba(0, 0, 0, 0.4);">
-    <!-- Custom Scrollbar Styling (Webkit Browsers) -->
-    <style>
-      ::-webkit-scrollbar {
-        width: 12px;
-        background-color: transparent;
-      }
-      ::-webkit-scrollbar-track {
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 10px;
-      }
-      ::-webkit-scrollbar-thumb {
-        background-color: #007bff;
-        border-radius: 10px;
-        border: 3px solid rgba(255, 255, 255, 0.1);
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background-color: #0056b3;
-      }
-    </style>
+    <section
+      id="projects"
+      style="
+        background-image: url('images/arnold-francisca-f77Bh3inUpE-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10vh;
+        padding-bottom: 5vh;
+        color: #fff;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      "
+    >
+      <h2
+        style="
+          font-size: 2.5em;
+          font-family: 'Playfair Display', serif;
+          margin-bottom: 30px;
+          letter-spacing: 2px;
+        "
+      >
+        Projects
+      </h2>
 
-    <!-- Project Cards (14 of them) -->
-    <a href="https://ayushvashisth1.github.io/library_management/" style="text-decoration: none; color: inherit;">
-      <div class="project-card" style="background-color: rgba(255, 255, 255, 0.9); padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center; color: #333; cursor: pointer;">
-        <span style="font-size: 3em; display: block; margin-bottom: 10px;">📚</span>
-        <h3 style="margin-top: 0; font-size: 1.2em; color: #004d99;">Library_management System</h3>
-        
-      </div>
-    </a>
-    <!-- Repeat the project card 13 more times, changing the content and link for each -->
-    <a href="https://github.com/ayushvashisth1/digital-clock-using-python" style="text-decoration: none; color: inherit;">
-      <div class="project-card" style="background-color: rgba(255, 255, 255, 0.9); padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center; color: #333; cursor: pointer;">
-        <span style="font-size: 3em; display: block; margin-bottom: 10px;">⏰</span>
-        <h3 style="margin-top: 0; font-size: 1.2em; color: #004d99;">Digital-clock-using-Python</h3>
-        
-      </div>
-    </a>
-    <a href="https://github.com/ayushvashisth1/Language-Translator-using-python-with-GUI" style="text-decoration: none; color: inherit;">
-      <div class="project-card" style="background-color: rgba(255, 255, 255, 0.9); padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center; color: #333; cursor: pointer;">
-        <span style="font-size: 3em; display: block; margin-bottom: 10px;">🗣️</span>
-        <h3 style="margin-top: 0; font-size: 1.2em; color: #004d99;">Language-Translator-using-python-with-GUI</h3>
-        
-      </div>
-    </a>
-    <a href="https://github.com/ayushvashisth1/Gmail-Automate" style="text-decoration: none; color: inherit;">
-      <div class="project-card" style="background-color: rgba(255, 255, 255, 0.9); padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center; color: #333; cursor: pointer;">
-        <span style="font-size: 3em; display: block; margin-bottom: 10px;">📧 </span>
-        <h3 style="margin-top: 0; font-size: 1.2em; color: #004d99;">Gmail-Automate</h3>
-        
-      </div>
-    </a>
-    <a href="https://github.com/ayushvashisth1/Youtube-video-downloader" style="text-decoration: none; color: inherit;">
-      <div class="project-card" style="background-color: rgba(255, 255, 255, 0.9); padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center; color: #333; cursor: pointer;">
-        <span style="font-size: 3em; display: block; margin-bottom: 10px;"> ▶️ </span>
-        <h3 style="margin-top: 0; font-size: 1.2em; color: #004d99;">Youtube-video-downloader</h3>
-    
-      </div>
-    </a>
-    <a href="https://github.com/ayushvashisth1/Mobile-Number-detail-using-python-" style="text-decoration: none; color: inherit;">
-      <div class="project-card" style="background-color: rgba(255, 255, 255, 0.9); padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center; color: #333; cursor: pointer;">
-        <span style="font-size: 3em; display: block; margin-bottom: 10px;">📱</span>
-        <h3 style="margin-top: 0; font-size: 1.2em; color: #004d99;">Mobile-Number-detail-using-python-</h3>
-        
-      </div>
-    </a>
-    <a href="https://github.com/ayushvashisth1/Instagram-Automation" style="text-decoration: none; color: inherit;">
-      <div class="project-card" style="background-color: rgba(255, 255, 255, 0.9); padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center; color: #333; cursor: pointer;">
-        <span style="font-size: 3em; display: block; margin-bottom: 10px;">🤖</span>
-        <h3 style="margin-top: 0; font-size: 1.2em; color: #004d99;">Instagram-Automation</h3>
-        
-      </div>
-    </a>
-    <a href="https://github.com/ayushvashisth1/Internet-Speed-Calculaor-using-python" style="text-decoration: none; color: inherit;">
-      <div class="project-card" style="background-color: rgba(255, 255, 255, 0.9); padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center; color: #333; cursor: pointer;">
-        <span style="font-size: 3em; display: block; margin-bottom: 10px;">📶</span>
-        <h3 style="margin-top: 0; font-size: 1.2em; color: #004d99;">Internet-Speed-Calculaor-using-python</h3>
-        
-      </div>
-    </a>
-    <a href="https://github.com/ayushvashisth1/calculator-with-history" style="text-decoration: none; color: inherit;">
-      <div class="project-card" style="background-color: rgba(255, 255, 255, 0.9); padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center; color: #333; cursor: pointer;">
-        <span style="font-size: 3em; display: block; margin-bottom: 10px;">🧮</span>
-        <h3 style="margin-top: 0; font-size: 1.2em; color: #004d99;">calculator-with-history</h3>
-        
-      </div>
-    </a>
-    <a href="https://github.com/ayushvashisth1/Fake-News-Headline-Generator" style="text-decoration: none; color: inherit;">
-      <div class="project-card" style="background-color: rgba(255, 255, 255, 0.9); padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center; color: #333; cursor: pointer;">
-        <span style="font-size: 3em; display: block; margin-bottom: 10px;">📰</span>
-        <h3 style="margin-top: 0; font-size: 1.2em; color: #004d99;">Fake Fake-News-Headline-Generator</h3>
-        
-      </div>
-    </a>
-    <a href="https://github.com/ayushvashisth1/Password-Guessing-Game-" style="text-decoration: none; color: inherit;">
-      <div class="project-card" style="background-color: rgba(255, 255, 255, 0.9); padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center; color: #333; cursor: pointer;">
-        <span style="font-size: 3em; display: block; margin-bottom: 10px;">🔐</span>
-        <h3 style="margin-top: 0; font-size: 1.2em; color: #004d99;">Password-Guessing-Game</h3>
-        
-      </div>
-    </a>
-    <a href="https://github.com/ayushvashisth1/Weather-app-using-api" style="text-decoration: none; color: inherit;">
-      <div class="project-card" style="background-color: rgba(255, 255, 255, 0.9); padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center; color: #333; cursor: pointer;">
-        <span style="font-size: 3em; display: block; margin-bottom: 10px;">🌤️</span>
-        <h3 style="margin-top: 0; font-size: 1.2em; color: #004d99;">Weather-app-using-api</h3>
-        
-      </div>
-    </a>
-    <a href="https://github.com/ayushvashisth1/typingSpeed" style="text-decoration: none; color: inherit;">
-      <div class="project-card" style="background-color: rgba(255, 255, 255, 0.9); padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center; color: #333; cursor: pointer;">
-        <span style="font-size: 3em; display: block; margin-bottom: 10px;">⌨️</span>
-        <h3 style="margin-top: 0; font-size: 1.2em; color: #004d99;">Typing Speed test</h3>
-        
-      </div>
-    </a>
-    <a href="https://github.com/ayushvashisth1/emailValidator" style="text-decoration: none; color: inherit;">
-      <div class="project-card" style="background-color: rgba(255, 255, 255, 0.9); padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center; color: #333; cursor: pointer;">
-        <span style="font-size: 3em; display: block; margin-bottom: 10px;">👍</span>
-        <h3 style="margin-top: 0; font-size: 1.2em; color: #004d99;">Email Validator</h3>
-        
-      </div>
-    </a>
-    <a href="https://github.com/ayushvashisth1/qrcodeGenerator" style="text-decoration: none; color: inherit;">
-      <div class="project-card" style="background-color: rgba(255, 255, 255, 0.9); padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center; color: #333; cursor: pointer;">
-        <span style="font-size: 3em; display: block; margin-bottom: 10px;">⬛️</span>
-        <h3 style="margin-top: 0; font-size: 1.2em; color: #004d99;">QR Code Generator</h3>
-        
-      </div>
-    </a>
-    
-  </div>
-</section>
+      <div
+        class="projects-container"
+        style="
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+          gap: 25px;
+          width: 90%;
+          max-width: 1200px;
+          padding: 20px;
+          overflow-y: auto;
+          height: 70vh;
+          scrollbar-width: thin;
+          scrollbar-color: #007bff #f1f1f1;
+          border-radius: 10px;
+          background-color: rgba(0, 0, 0, 0.4);
+        "
+      >
+        <!-- Custom Scrollbar Styling (Webkit Browsers) -->
+        <style>
+          ::-webkit-scrollbar {
+            width: 12px;
+            background-color: transparent;
+          }
+          ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+          }
+          ::-webkit-scrollbar-thumb {
+            background-color: #007bff;
+            border-radius: 10px;
+            border: 3px solid rgba(255, 255, 255, 0.1);
+          }
+          ::-webkit-scrollbar-thumb:hover {
+            background-color: #0056b3;
+          }
+        </style>
 
-    <section id="experience" style="background-image: url('images/ux-indonesia-qC2n6RQU4Vw-unsplash.jpg'); background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; text-align: center; padding-top: 10vh;">
-        <h2 style="font-size: xx-large;">Experience</h2>
-        <div class="experience-table" >
-            <div class="exp-row" style="background-color: white; color: black;">
-                <div class="exp-role" style="font-family: 'Times New Roman', Times, serif;">🎓 Student Liaison Team Member</div>
-                <div class="exp-company" style="font-family: 'Times New Roman', Times, serif;">Training and Placement Cell, UIET, MDU, Rohtak</div>
-                <div class="exp-dates" style="font-family: 'Times New Roman', Times, serif;">Oct 2024 – May 2025</div>
-            </div>
-           
-            <div class="exp-row" style="background-color: white; color: black;">
-                <div class="exp-role" style="font-family: 'Times New Roman', Times, serif;">🔒 Cybersecurity Fundamental (Internship)</div>
-                <div class="exp-company" style="font-family: 'Times New Roman', Times, serif;">IBM</div>
-                <div class="exp-dates" style="font-family: 'Times New Roman', Times, serif;">Oct 2024 – Nov 2024 · 2 mos</div>
-            </div>
-            
-            <div class="exp-row" style="background-color: white; color: black;">
-                <div class="exp-role" style="font-family: 'Times New Roman', Times, serif;">💻 Intern at International Business Machines</div>
-                <div class="exp-company" style="font-family: 'Times New Roman', Times, serif;">IBM</div>
-                <div class="exp-dates" style="font-family: 'Times New Roman', Times, serif;">Jul 2024 – Aug 2024 · 2 mos</div>
-            </div>
-            <div class="exp-row" style="background-color: white; color: black;">
-                <div class="exp-role" style="font-family: 'Times New Roman', Times, serif;">🎯 PrepInsta Prime Subscriber</div>
-                <div class="exp-company" style="font-family: 'Times New Roman', Times, serif;">PrepInsta</div>
-                <div class="exp-dates" style="font-family: 'Times New Roman', Times, serif;">Sep 2023 – Present</div>
-            </div>
-            <div class="exp-row" style="background-color: white; color: black;">
-                <div class="exp-role" style="font-family: 'Times New Roman', Times, serif;">📊 Tata Group – Data Visualization Job Simulation</div>
-                <div class="exp-company" style="font-family: 'Times New Roman', Times, serif;">Forage</div>
-                <div class="exp-dates" style="font-family: 'Times New Roman', Times, serif;">Jun 2024 – Jul 2024 · 2 mos</div>
-            </div>
-            <div class="exp-row" style="background-color: white; color: black;">
-                <div class="exp-role" style="font-family: 'Times New Roman', Times, serif;">🚀 The Agnirva Space Internship Program</div>
-                <div class="exp-company" style="font-family: 'Times New Roman', Times, serif;">Agnirva.com Space Community</div>
-                <div class="exp-dates" style="font-family: 'Times New Roman', Times, serif;">May 2024 – Jul 2024 · 3 mos</div>
-            </div>
-        </div>
+        <!-- Project Cards (14 of them) -->
+        <a
+          href="https://ayushvashisth1.github.io/library_management/"
+          style="text-decoration: none; color: inherit"
+        >
+          <div
+            class="project-card"
+            style="
+              background-color: rgba(255, 255, 255, 0.9);
+              padding: 25px;
+              border-radius: 10px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+              text-align: center;
+              color: #333;
+              cursor: pointer;
+            "
+          >
+            <span style="font-size: 3em; display: block; margin-bottom: 10px"
+              >📚</span
+            >
+            <h3 style="margin-top: 0; font-size: 1.2em; color: #004d99">
+              Library_management System
+            </h3>
+          </div>
+        </a>
+        <!-- Repeat the project card 13 more times, changing the content and link for each -->
+        <a
+          href="https://github.com/ayushvashisth1/digital-clock-using-python"
+          style="text-decoration: none; color: inherit"
+        >
+          <div
+            class="project-card"
+            style="
+              background-color: rgba(255, 255, 255, 0.9);
+              padding: 25px;
+              border-radius: 10px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+              text-align: center;
+              color: #333;
+              cursor: pointer;
+            "
+          >
+            <span style="font-size: 3em; display: block; margin-bottom: 10px"
+              >⏰</span
+            >
+            <h3 style="margin-top: 0; font-size: 1.2em; color: #004d99">
+              Digital-clock-using-Python
+            </h3>
+          </div>
+        </a>
+        <a
+          href="https://github.com/ayushvashisth1/Language-Translator-using-python-with-GUI"
+          style="text-decoration: none; color: inherit"
+        >
+          <div
+            class="project-card"
+            style="
+              background-color: rgba(255, 255, 255, 0.9);
+              padding: 25px;
+              border-radius: 10px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+              text-align: center;
+              color: #333;
+              cursor: pointer;
+            "
+          >
+            <span style="font-size: 3em; display: block; margin-bottom: 10px"
+              >🗣️</span
+            >
+            <h3 style="margin-top: 0; font-size: 1.2em; color: #004d99">
+              Language-Translator-using-python-with-GUI
+            </h3>
+          </div>
+        </a>
+        <a
+          href="https://github.com/ayushvashisth1/Gmail-Automate"
+          style="text-decoration: none; color: inherit"
+        >
+          <div
+            class="project-card"
+            style="
+              background-color: rgba(255, 255, 255, 0.9);
+              padding: 25px;
+              border-radius: 10px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+              text-align: center;
+              color: #333;
+              cursor: pointer;
+            "
+          >
+            <span style="font-size: 3em; display: block; margin-bottom: 10px"
+              >📧
+            </span>
+            <h3 style="margin-top: 0; font-size: 1.2em; color: #004d99">
+              Gmail-Automate
+            </h3>
+          </div>
+        </a>
+        <a
+          href="https://github.com/ayushvashisth1/Youtube-video-downloader"
+          style="text-decoration: none; color: inherit"
+        >
+          <div
+            class="project-card"
+            style="
+              background-color: rgba(255, 255, 255, 0.9);
+              padding: 25px;
+              border-radius: 10px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+              text-align: center;
+              color: #333;
+              cursor: pointer;
+            "
+          >
+            <span style="font-size: 3em; display: block; margin-bottom: 10px">
+              ▶️
+            </span>
+            <h3 style="margin-top: 0; font-size: 1.2em; color: #004d99">
+              Youtube-video-downloader
+            </h3>
+          </div>
+        </a>
+        <a
+          href="https://github.com/ayushvashisth1/Mobile-Number-detail-using-python-"
+          style="text-decoration: none; color: inherit"
+        >
+          <div
+            class="project-card"
+            style="
+              background-color: rgba(255, 255, 255, 0.9);
+              padding: 25px;
+              border-radius: 10px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+              text-align: center;
+              color: #333;
+              cursor: pointer;
+            "
+          >
+            <span style="font-size: 3em; display: block; margin-bottom: 10px"
+              >📱</span
+            >
+            <h3 style="margin-top: 0; font-size: 1.2em; color: #004d99">
+              Mobile-Number-detail-using-python-
+            </h3>
+          </div>
+        </a>
+        <a
+          href="https://github.com/ayushvashisth1/Instagram-Automation"
+          style="text-decoration: none; color: inherit"
+        >
+          <div
+            class="project-card"
+            style="
+              background-color: rgba(255, 255, 255, 0.9);
+              padding: 25px;
+              border-radius: 10px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+              text-align: center;
+              color: #333;
+              cursor: pointer;
+            "
+          >
+            <span style="font-size: 3em; display: block; margin-bottom: 10px"
+              >🤖</span
+            >
+            <h3 style="margin-top: 0; font-size: 1.2em; color: #004d99">
+              Instagram-Automation
+            </h3>
+          </div>
+        </a>
+        <a
+          href="https://github.com/ayushvashisth1/Internet-Speed-Calculaor-using-python"
+          style="text-decoration: none; color: inherit"
+        >
+          <div
+            class="project-card"
+            style="
+              background-color: rgba(255, 255, 255, 0.9);
+              padding: 25px;
+              border-radius: 10px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+              text-align: center;
+              color: #333;
+              cursor: pointer;
+            "
+          >
+            <span style="font-size: 3em; display: block; margin-bottom: 10px"
+              >📶</span
+            >
+            <h3 style="margin-top: 0; font-size: 1.2em; color: #004d99">
+              Internet-Speed-Calculaor-using-python
+            </h3>
+          </div>
+        </a>
+        <a
+          href="https://github.com/ayushvashisth1/calculator-with-history"
+          style="text-decoration: none; color: inherit"
+        >
+          <div
+            class="project-card"
+            style="
+              background-color: rgba(255, 255, 255, 0.9);
+              padding: 25px;
+              border-radius: 10px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+              text-align: center;
+              color: #333;
+              cursor: pointer;
+            "
+          >
+            <span style="font-size: 3em; display: block; margin-bottom: 10px"
+              >🧮</span
+            >
+            <h3 style="margin-top: 0; font-size: 1.2em; color: #004d99">
+              calculator-with-history
+            </h3>
+          </div>
+        </a>
+        <a
+          href="https://github.com/ayushvashisth1/Fake-News-Headline-Generator"
+          style="text-decoration: none; color: inherit"
+        >
+          <div
+            class="project-card"
+            style="
+              background-color: rgba(255, 255, 255, 0.9);
+              padding: 25px;
+              border-radius: 10px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+              text-align: center;
+              color: #333;
+              cursor: pointer;
+            "
+          >
+            <span style="font-size: 3em; display: block; margin-bottom: 10px"
+              >📰</span
+            >
+            <h3 style="margin-top: 0; font-size: 1.2em; color: #004d99">
+              Fake Fake-News-Headline-Generator
+            </h3>
+          </div>
+        </a>
+        <a
+          href="https://github.com/ayushvashisth1/Password-Guessing-Game-"
+          style="text-decoration: none; color: inherit"
+        >
+          <div
+            class="project-card"
+            style="
+              background-color: rgba(255, 255, 255, 0.9);
+              padding: 25px;
+              border-radius: 10px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+              text-align: center;
+              color: #333;
+              cursor: pointer;
+            "
+          >
+            <span style="font-size: 3em; display: block; margin-bottom: 10px"
+              >🔐</span
+            >
+            <h3 style="margin-top: 0; font-size: 1.2em; color: #004d99">
+              Password-Guessing-Game
+            </h3>
+          </div>
+        </a>
+        <a
+          href="https://github.com/ayushvashisth1/Weather-app-using-api"
+          style="text-decoration: none; color: inherit"
+        >
+          <div
+            class="project-card"
+            style="
+              background-color: rgba(255, 255, 255, 0.9);
+              padding: 25px;
+              border-radius: 10px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+              text-align: center;
+              color: #333;
+              cursor: pointer;
+            "
+          >
+            <span style="font-size: 3em; display: block; margin-bottom: 10px"
+              >🌤️</span
+            >
+            <h3 style="margin-top: 0; font-size: 1.2em; color: #004d99">
+              Weather-app-using-api
+            </h3>
+          </div>
+        </a>
+        <a
+          href="https://github.com/ayushvashisth1/typingSpeed"
+          style="text-decoration: none; color: inherit"
+        >
+          <div
+            class="project-card"
+            style="
+              background-color: rgba(255, 255, 255, 0.9);
+              padding: 25px;
+              border-radius: 10px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+              text-align: center;
+              color: #333;
+              cursor: pointer;
+            "
+          >
+            <span style="font-size: 3em; display: block; margin-bottom: 10px"
+              >⌨️</span
+            >
+            <h3 style="margin-top: 0; font-size: 1.2em; color: #004d99">
+              Typing Speed test
+            </h3>
+          </div>
+        </a>
+        <a
+          href="https://github.com/ayushvashisth1/emailValidator"
+          style="text-decoration: none; color: inherit"
+        >
+          <div
+            class="project-card"
+            style="
+              background-color: rgba(255, 255, 255, 0.9);
+              padding: 25px;
+              border-radius: 10px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+              text-align: center;
+              color: #333;
+              cursor: pointer;
+            "
+          >
+            <span style="font-size: 3em; display: block; margin-bottom: 10px"
+              >👍</span
+            >
+            <h3 style="margin-top: 0; font-size: 1.2em; color: #004d99">
+              Email Validator
+            </h3>
+          </div>
+        </a>
+        <a
+          href="https://github.com/ayushvashisth1/qrcodeGenerator"
+          style="text-decoration: none; color: inherit"
+        >
+          <div
+            class="project-card"
+            style="
+              background-color: rgba(255, 255, 255, 0.9);
+              padding: 25px;
+              border-radius: 10px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+              text-align: center;
+              color: #333;
+              cursor: pointer;
+            "
+          >
+            <span style="font-size: 3em; display: block; margin-bottom: 10px"
+              >⬛️</span
+            >
+            <h3 style="margin-top: 0; font-size: 1.2em; color: #004d99">
+              QR Code Generator
+            </h3>
+          </div>
+        </a>
+      </div>
     </section>
-    
-    <section id="certificate" style="background-image: url('images/kelly-sikkema-tk9RQCq5eQo-unsplash.jpg'); background-size: cover; background-position: center; display: flex; flex-direction: column; align-items: center; padding-top: 10vh; padding-bottom: 5vh; color: #fff; text-shadow: 1px 1px 2px rgba(0,0,0,0.6);">
-    <h2 class="section-title" style="font-size: 2.5em; font-family: 'Playfair Display', serif; margin-bottom: 30px; letter-spacing: 2px;">Certificates</h2>
-    
-    <div class="certificate-scroll-box" style="width: 90%; max-width: 1200px; height: 70vh; overflow-y: auto; background-color: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);">
+
+    <section
+      id="experience"
+      style="
+        background-image: url('images/ux-indonesia-qC2n6RQU4Vw-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        padding-top: 10vh;
+      "
+    >
+      <h2 style="font-size: xx-large">Experience</h2>
+      <div class="experience-table">
+        <div class="exp-row" style="background-color: white; color: black">
+          <div
+            class="exp-role"
+            style="font-family: 'Times New Roman', Times, serif"
+          >
+            🎓 Student Liaison Team Member
+          </div>
+          <div
+            class="exp-company"
+            style="font-family: 'Times New Roman', Times, serif"
+          >
+            Training and Placement Cell, UIET, MDU, Rohtak
+          </div>
+          <div
+            class="exp-dates"
+            style="font-family: 'Times New Roman', Times, serif"
+          >
+            Oct 2024 – May 2025
+          </div>
+        </div>
+
+        <div class="exp-row" style="background-color: white; color: black">
+          <div
+            class="exp-role"
+            style="font-family: 'Times New Roman', Times, serif"
+          >
+            🔒 Cybersecurity Fundamental (Internship)
+          </div>
+          <div
+            class="exp-company"
+            style="font-family: 'Times New Roman', Times, serif"
+          >
+            IBM
+          </div>
+          <div
+            class="exp-dates"
+            style="font-family: 'Times New Roman', Times, serif"
+          >
+            Oct 2024 – Nov 2024 · 2 mos
+          </div>
+        </div>
+
+        <div class="exp-row" style="background-color: white; color: black">
+          <div
+            class="exp-role"
+            style="font-family: 'Times New Roman', Times, serif"
+          >
+            💻 Intern at International Business Machines
+          </div>
+          <div
+            class="exp-company"
+            style="font-family: 'Times New Roman', Times, serif"
+          >
+            IBM
+          </div>
+          <div
+            class="exp-dates"
+            style="font-family: 'Times New Roman', Times, serif"
+          >
+            Jul 2024 – Aug 2024 · 2 mos
+          </div>
+        </div>
+        <div class="exp-row" style="background-color: white; color: black">
+          <div
+            class="exp-role"
+            style="font-family: 'Times New Roman', Times, serif"
+          >
+            🎯 PrepInsta Prime Subscriber
+          </div>
+          <div
+            class="exp-company"
+            style="font-family: 'Times New Roman', Times, serif"
+          >
+            PrepInsta
+          </div>
+          <div
+            class="exp-dates"
+            style="font-family: 'Times New Roman', Times, serif"
+          >
+            Sep 2023 – Present
+          </div>
+        </div>
+        <div class="exp-row" style="background-color: white; color: black">
+          <div
+            class="exp-role"
+            style="font-family: 'Times New Roman', Times, serif"
+          >
+            📊 Tata Group – Data Visualization Job Simulation
+          </div>
+          <div
+            class="exp-company"
+            style="font-family: 'Times New Roman', Times, serif"
+          >
+            Forage
+          </div>
+          <div
+            class="exp-dates"
+            style="font-family: 'Times New Roman', Times, serif"
+          >
+            Jun 2024 – Jul 2024 · 2 mos
+          </div>
+        </div>
+        <div class="exp-row" style="background-color: white; color: black">
+          <div
+            class="exp-role"
+            style="font-family: 'Times New Roman', Times, serif"
+          >
+            🚀 The Agnirva Space Internship Program
+          </div>
+          <div
+            class="exp-company"
+            style="font-family: 'Times New Roman', Times, serif"
+          >
+            Agnirva.com Space Community
+          </div>
+          <div
+            class="exp-dates"
+            style="font-family: 'Times New Roman', Times, serif"
+          >
+            May 2024 – Jul 2024 · 3 mos
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="certificate"
+      style="
+        background-image: url('images/kelly-sikkema-tk9RQCq5eQo-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10vh;
+        padding-bottom: 5vh;
+        color: #fff;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+      "
+    >
+      <h2
+        class="section-title"
+        style="
+          font-size: 2.5em;
+          font-family: 'Playfair Display', serif;
+          margin-bottom: 30px;
+          letter-spacing: 2px;
+        "
+      >
+        Certificates
+      </h2>
+
+      <div
+        class="certificate-scroll-box"
+        style="
+          width: 90%;
+          max-width: 1200px;
+          height: 70vh;
+          overflow-y: auto;
+          background-color: rgba(0, 0, 0, 0.5);
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        "
+      >
         <style>
           ::-webkit-scrollbar {
             width: 12px;
@@ -284,262 +969,809 @@
           }
         </style>
 
-        <div class="certificate-matrix" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 25px;">
-            <div class="certificate" style="background-color: rgba(255, 255, 255, 0.95); border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-                <a href="https://drive.google.com/file/d/1apMbV9fvAnKvXLQBQQ5PPbeYDdzrTgRt/view?usp=sharing" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-                    <img src="images/certificate/droproball.jpg" alt="National Drop Roball Championship" style="width: 100%; height: auto; display: block; border-bottom: 1px solid #ddd;">
-                    <div style="padding: 15px; text-align: center;">
-                        <span style="font-size: 1.1em; color: #0056b3; font-weight: 700;">National Drop Roball Championship 🏆</span>
-                    </div>
-                </a>
-            </div>
-            <div class="certificate" style="background-color: rgba(255, 255, 255, 0.95); border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-                <a href="https://drive.google.com/file/d/1HJjU2fBN_OTlZwGvoWXPyUIAJp-eAOAx/view?usp=sharing" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-                    <img src="images/certificate/baseball.png" alt="U-17 District Baseball championship 2018-19. (Gold medal)" style="width: 100%; height: auto; display: block; border-bottom: 1px solid #ddd;">
-                    <div style="padding: 15px; text-align: center;">
-                        <span style="font-size: 1.1em; color: #0056b3; font-weight: 700;">U-17 District Baseball championship 2018-19. (Gold medal)</span>
-                    </div>
-                </a>
-            </div>
-            <div class="certificate" style="background-color: rgba(255, 255, 255, 0.95); border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-                <a href="images/certificate/JEE RESULT.pdf" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-                    <img src="images/certificate/JEE.jpg" alt="AIR 40237 JEE MAINS 2023" style="width: 100%; height: auto; display: block; border-bottom: 1px solid #ddd;">
-                    <div style="padding: 15px; text-align: center;">
-                        <span style="font-size: 1.1em; color: #0056b3; font-weight: 700;">AIR 40237 JEE MAINS 2023</span>
-                    </div>
-                </a>
-            </div>
-            <div class="certificate" style="background-color: rgba(255, 255, 255, 0.95); border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-                <a href="images/certificate/certificate_Dogs and Cats Prediction Project_564578.pdf" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-                    <img src="images/certificate/prepinsta.jpg" alt="Dogs and Cats Prediction Project" style="width: 100%; height: auto; display: block; border-bottom: 1px solid #ddd;">
-                    <div style="padding: 15px; text-align: center;">
-                        <span style="font-size: 1.1em; color: #0056b3; font-weight: 700;">Dogs and Cats Prediction Project</span>
-                    </div>
-                </a>
-            </div>
-            <div class="certificate" style="background-color: rgba(255, 255, 255, 0.95); border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-                <a href="images/certificate/certificate_CSS_564578.pdf" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-                    <img src="images/certificate/prepinsta.jpg" alt="CSS" style="width: 100%; height: auto; display: block; border-bottom: 1px solid #ddd;">
-                    <div style="padding: 15px; text-align: center;">
-                        <span style="font-size: 1.1em; color: #0056b3; font-weight: 700;">CSS</span>
-                    </div>
-                </a>
-            </div>
-            <div class="certificate" style="background-color: rgba(255, 255, 255, 0.95); border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-                <a href="images/certificate/accenturec.jpg" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-                    <img src="images/certificate/Accenture-Logo.png" alt="Technology Consulting Job Simulation" style="width: 100%; height: auto; display: block; border-bottom: 1px solid #ddd;">
-                    <div style="padding: 15px; text-align: center;">
-                        <span style="font-size: 1.1em; color: #0056b3; font-weight: 700;">Technology Consulting Job Simulation</span>
-                    </div>
-                </a>
-            </div>
-            <div class="certificate" style="background-color: rgba(255, 255, 255, 0.95); border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-                <a href="images/certificate/certificate_DSA in C_564578.pdf" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-                    <img src="images/certificate/prepinsta.jpg" alt="DSA in C" style="width: 100%; height: auto; display: block; border-bottom: 1px solid #ddd;">
-                    <div style="padding: 15px; text-align: center;">
-                        <span style="font-size: 1.1em; color: #0056b3; font-weight: 700;">DSA in C</span>
-                    </div>
-                </a>
-            </div>
-            <div class="certificate" style="background-color: rgba(255, 255, 255, 0.95); border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-                <a href="images/certificate/certificate_HTML_564578.pdf" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-                    <img src="images/certificate/prepinsta.jpg" alt="HTML" style="width: 100%; height: auto; display: block; border-bottom: 1px solid #ddd;">
-                    <div style="padding: 15px; text-align: center;">
-                        <span style="font-size: 1.1em; color: #0056b3; font-weight: 700;">HTML</span>
-                    </div>
-                </a>
-            </div>
-            <div class="certificate" style="background-color: rgba(255, 255, 255, 0.95); border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-                <a href="images/certificate/certificate_Python Course_564578.pdf" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-                    <img src="images/certificate/prepinsta.jpg" alt="Python Course" style="width: 100%; height: auto; display: block; border-bottom: 1px solid #ddd;">
-                    <div style="padding: 15px; text-align: center;">
-                        <span style="font-size: 1.1em; color: #0056b3; font-weight: 700;">Python Course</span>
-                    </div>
-                </a>
-            </div>
-            <div class="certificate" style="background-color: rgba(255, 255, 255, 0.95); border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-                <a href="images/certificate/ibm summer.jpg" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-                    <img src="images/certificate/ibm.jpg" alt="IBM SkillsBuild Summer Internship Program" style="width: 100%; height: auto; display: block; border-bottom: 1px solid #ddd;">
-                    <div style="padding: 15px; text-align: center;">
-                        <span style="font-size: 1.1em; color: #0056b3; font-weight: 700;">IBM SkillsBuild Summer Internship Program</span>
-                    </div>
-                </a>
-            </div>
-            <div class="certificate" style="background-color: rgba(255, 255, 255, 0.95); border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-                <a href="images/certificate/CPROG.jpg" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-                    <img src="images/certificate/prepinsta.jpg" alt="C Programming" style="width: 100%; height: auto; display: block; border-bottom: 1px solid #ddd;">
-                    <div style="padding: 15px; text-align: center;">
-                        <span style="font-size: 1.1em; color: #0056b3; font-weight: 700;">C Programming</span>
-                    </div>
-                </a>
-            </div>
-            <div class="certificate" style="background-color: rgba(255, 255, 255, 0.95); border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-                <a href="images/certificate/cybersecurity fundamental.jpg" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-                    <img src="images/certificate/ibm.jpg" alt="cybersecurity fundamental" style="width: 100%; height: auto; display: block; border-bottom: 1px solid #ddd;">
-                    <div style="padding: 15px; text-align: center;">
-                        <span style="font-size: 1.1em; color: #0056b3; font-weight: 700;">Cybersecurity Fundamentals</span>
-                    </div>
-                </a>
-            </div>
-            <div class="certificate" style="background-color: rgba(255, 255, 255, 0.95); border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-                <a href="images/certificate/certificate_Data Science_564578.pdf" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-                    <img src="images/certificate/prepinsta.jpg" alt="Data Science" style="width: 100%; height: auto; display: block; border-bottom: 1px solid #ddd;">
-                    <div style="padding: 15px; text-align: center;">
-                        <span style="font-size: 1.1em; color: #0056b3; font-weight: 700;">Data Science</span>
-                    </div>
-                </a>
-            </div>
-            <div class="certificate" style="background-color: rgba(255, 255, 255, 0.95); border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-                <a href="images/certificate/certificate_First Naukri_564578.pdf" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-                    <img src="images/certificate/prepinsta.jpg" alt="First Naukri" style="width: 100%; height: auto; display: block; border-bottom: 1px solid #ddd;">
-                    <div style="padding: 15px; text-align: center;">
-                        <span style="font-size: 1.1em; color: #0056b3; font-weight: 700;">First Naukri</span>
-                    </div>
-                </a>
-            </div>
-            <div class="certificate" style="background-color: rgba(255, 255, 255, 0.95); border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-                <a href="images/certificate/certificate_AMCAT Course_564578.pdf" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-                    <img src="images/certificate/prepinsta.jpg" alt="AMCAT Course" style="width: 100%; height: auto; display: block; border-bottom: 1px solid #ddd;">
-                    <div style="padding: 15px; text-align: center;">
-                        <span style="font-size: 1.1em; color: #0056b3; font-weight: 700;">AMCAT Course</span>
-                    </div>
-                </a>
-            </div>
-            <div class="certificate" style="background-color: rgba(255, 255, 255, 0.95); border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-                <a href="images/certificate/certificate_Tableau_564578 (1).pdf" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-                    <img src="images/certificate/prepinsta.jpg" alt="Tableau" style="width: 100%; height: auto; display: block; border-bottom: 1px solid #ddd;">
-                    <div style="padding: 15px; text-align: center;">
-                        <span style="font-size: 1.1em; color: #0056b3; font-weight: 700;">Tableau</span>
-                    </div>
-                </a>
-            </div>
-            <div class="certificate" style="background-color: rgba(255, 255, 255, 0.95); border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-                <a href="images/certificate/agnirava.jpg" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-                    <img src="images/certificate/agnirava logo.jpg" alt="The Agnirva Space Internship Program" style="width: 100%; height: auto; display: block; border-bottom: 1px solid #ddd;">
-                    <div style="padding: 15px; text-align: center;">
-                        <span style="font-size: 1.1em; color: #0056b3; font-weight: 700;">The Agnirva Space Internship Program</span>
-                    </div>
-                </a>
-            </div>
-            <div class="certificate" style="background-color: rgba(255, 255, 255, 0.95); border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-                <a href="images/certificate/tata jobsim.jpg" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-                    <img src="images/certificate/tata'.png" alt="Tata Group - Data Visualisation: Empowering Business with Effective Insights Job Simulation" style="width: 100%; height: auto; display: block; border-bottom: 1px solid #ddd;">
-                    <div style="padding: 15px; text-align: center;">
-                        <span style="font-size: 1.1em; color: #0056b3; font-weight: 700;">Tata Group - Data Visualisation Job Simulation</span>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-    <section id="resume" style="background-image: url('images/joao-ferrao-4YzrcDNcRVg-unsplash.jpg'); background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; text-align: center; padding-top: 10vh;">
-        <h2>Resume</h2>
-        <div class="resume-container">
-            <a href="https://drive.google.com/file/d/1ZMG1Nxw6roh5JL15M63DpWKGNqj1chVt/view?usp=sharing" download="Ayush_Vashisth_Resume.pdf">
-                <button class="download-btn">Download My CV</button>
+        <div
+          class="certificate-matrix"
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 25px;
+          "
+        >
+          <div
+            class="certificate"
+            style="
+              background-color: rgba(255, 255, 255, 0.95);
+              border-radius: 8px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+              overflow: hidden;
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+            "
+          >
+            <a
+              href="https://drive.google.com/file/d/1apMbV9fvAnKvXLQBQQ5PPbeYDdzrTgRt/view?usp=sharing"
+              target="_blank"
+              style="text-decoration: none; color: inherit; display: block"
+            >
+              <img
+                src="images/certificate/droproball.jpg"
+                alt="National Drop Roball Championship"
+                style="
+                  width: 100%;
+                  height: auto;
+                  display: block;
+                  border-bottom: 1px solid #ddd;
+                "
+              />
+              <div style="padding: 15px; text-align: center">
+                <span style="font-size: 1.1em; color: #0056b3; font-weight: 700"
+                  >National Drop Roball Championship 🏆</span
+                >
+              </div>
             </a>
-            <div class="pdf-container">
-                <iframe src="images/ayush cv.pdf" width="100%" height="600px"></iframe>
-            </div>
+          </div>
+          <div
+            class="certificate"
+            style="
+              background-color: rgba(255, 255, 255, 0.95);
+              border-radius: 8px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+              overflow: hidden;
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+            "
+          >
+            <a
+              href="https://drive.google.com/file/d/1HJjU2fBN_OTlZwGvoWXPyUIAJp-eAOAx/view?usp=sharing"
+              target="_blank"
+              style="text-decoration: none; color: inherit; display: block"
+            >
+              <img
+                src="images/certificate/baseball.png"
+                alt="U-17 District Baseball championship 2018-19. (Gold medal)"
+                style="
+                  width: 100%;
+                  height: auto;
+                  display: block;
+                  border-bottom: 1px solid #ddd;
+                "
+              />
+              <div style="padding: 15px; text-align: center">
+                <span style="font-size: 1.1em; color: #0056b3; font-weight: 700"
+                  >U-17 District Baseball championship 2018-19. (Gold
+                  medal)</span
+                >
+              </div>
+            </a>
+          </div>
+          <div
+            class="certificate"
+            style="
+              background-color: rgba(255, 255, 255, 0.95);
+              border-radius: 8px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+              overflow: hidden;
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+            "
+          >
+            <a
+              href="images/certificate/JEE RESULT.pdf"
+              target="_blank"
+              style="text-decoration: none; color: inherit; display: block"
+            >
+              <img
+                src="images/certificate/JEE.jpg"
+                alt="AIR 40237 JEE MAINS 2023"
+                style="
+                  width: 100%;
+                  height: auto;
+                  display: block;
+                  border-bottom: 1px solid #ddd;
+                "
+              />
+              <div style="padding: 15px; text-align: center">
+                <span style="font-size: 1.1em; color: #0056b3; font-weight: 700"
+                  >AIR 40237 JEE MAINS 2023</span
+                >
+              </div>
+            </a>
+          </div>
+          <div
+            class="certificate"
+            style="
+              background-color: rgba(255, 255, 255, 0.95);
+              border-radius: 8px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+              overflow: hidden;
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+            "
+          >
+            <a
+              href="images/certificate/certificate_Dogs and Cats Prediction Project_564578.pdf"
+              target="_blank"
+              style="text-decoration: none; color: inherit; display: block"
+            >
+              <img
+                src="images/certificate/prepinsta.jpg"
+                alt="Dogs and Cats Prediction Project"
+                style="
+                  width: 100%;
+                  height: auto;
+                  display: block;
+                  border-bottom: 1px solid #ddd;
+                "
+              />
+              <div style="padding: 15px; text-align: center">
+                <span style="font-size: 1.1em; color: #0056b3; font-weight: 700"
+                  >Dogs and Cats Prediction Project</span
+                >
+              </div>
+            </a>
+          </div>
+          <div
+            class="certificate"
+            style="
+              background-color: rgba(255, 255, 255, 0.95);
+              border-radius: 8px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+              overflow: hidden;
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+            "
+          >
+            <a
+              href="images/certificate/certificate_CSS_564578.pdf"
+              target="_blank"
+              style="text-decoration: none; color: inherit; display: block"
+            >
+              <img
+                src="images/certificate/prepinsta.jpg"
+                alt="CSS"
+                style="
+                  width: 100%;
+                  height: auto;
+                  display: block;
+                  border-bottom: 1px solid #ddd;
+                "
+              />
+              <div style="padding: 15px; text-align: center">
+                <span style="font-size: 1.1em; color: #0056b3; font-weight: 700"
+                  >CSS</span
+                >
+              </div>
+            </a>
+          </div>
+          <div
+            class="certificate"
+            style="
+              background-color: rgba(255, 255, 255, 0.95);
+              border-radius: 8px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+              overflow: hidden;
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+            "
+          >
+            <a
+              href="images/certificate/accenturec.jpg"
+              target="_blank"
+              style="text-decoration: none; color: inherit; display: block"
+            >
+              <img
+                src="images/certificate/Accenture-Logo.png"
+                alt="Technology Consulting Job Simulation"
+                style="
+                  width: 100%;
+                  height: auto;
+                  display: block;
+                  border-bottom: 1px solid #ddd;
+                "
+              />
+              <div style="padding: 15px; text-align: center">
+                <span style="font-size: 1.1em; color: #0056b3; font-weight: 700"
+                  >Technology Consulting Job Simulation</span
+                >
+              </div>
+            </a>
+          </div>
+          <div
+            class="certificate"
+            style="
+              background-color: rgba(255, 255, 255, 0.95);
+              border-radius: 8px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+              overflow: hidden;
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+            "
+          >
+            <a
+              href="images/certificate/certificate_DSA in C_564578.pdf"
+              target="_blank"
+              style="text-decoration: none; color: inherit; display: block"
+            >
+              <img
+                src="images/certificate/prepinsta.jpg"
+                alt="DSA in C"
+                style="
+                  width: 100%;
+                  height: auto;
+                  display: block;
+                  border-bottom: 1px solid #ddd;
+                "
+              />
+              <div style="padding: 15px; text-align: center">
+                <span style="font-size: 1.1em; color: #0056b3; font-weight: 700"
+                  >DSA in C</span
+                >
+              </div>
+            </a>
+          </div>
+          <div
+            class="certificate"
+            style="
+              background-color: rgba(255, 255, 255, 0.95);
+              border-radius: 8px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+              overflow: hidden;
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+            "
+          >
+            <a
+              href="images/certificate/certificate_HTML_564578.pdf"
+              target="_blank"
+              style="text-decoration: none; color: inherit; display: block"
+            >
+              <img
+                src="images/certificate/prepinsta.jpg"
+                alt="HTML"
+                style="
+                  width: 100%;
+                  height: auto;
+                  display: block;
+                  border-bottom: 1px solid #ddd;
+                "
+              />
+              <div style="padding: 15px; text-align: center">
+                <span style="font-size: 1.1em; color: #0056b3; font-weight: 700"
+                  >HTML</span
+                >
+              </div>
+            </a>
+          </div>
+          <div
+            class="certificate"
+            style="
+              background-color: rgba(255, 255, 255, 0.95);
+              border-radius: 8px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+              overflow: hidden;
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+            "
+          >
+            <a
+              href="images/certificate/certificate_Python Course_564578.pdf"
+              target="_blank"
+              style="text-decoration: none; color: inherit; display: block"
+            >
+              <img
+                src="images/certificate/prepinsta.jpg"
+                alt="Python Course"
+                style="
+                  width: 100%;
+                  height: auto;
+                  display: block;
+                  border-bottom: 1px solid #ddd;
+                "
+              />
+              <div style="padding: 15px; text-align: center">
+                <span style="font-size: 1.1em; color: #0056b3; font-weight: 700"
+                  >Python Course</span
+                >
+              </div>
+            </a>
+          </div>
+          <div
+            class="certificate"
+            style="
+              background-color: rgba(255, 255, 255, 0.95);
+              border-radius: 8px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+              overflow: hidden;
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+            "
+          >
+            <a
+              href="images/certificate/ibm summer.jpg"
+              target="_blank"
+              style="text-decoration: none; color: inherit; display: block"
+            >
+              <img
+                src="images/certificate/ibm.jpg"
+                alt="IBM SkillsBuild Summer Internship Program"
+                style="
+                  width: 100%;
+                  height: auto;
+                  display: block;
+                  border-bottom: 1px solid #ddd;
+                "
+              />
+              <div style="padding: 15px; text-align: center">
+                <span style="font-size: 1.1em; color: #0056b3; font-weight: 700"
+                  >IBM SkillsBuild Summer Internship Program</span
+                >
+              </div>
+            </a>
+          </div>
+          <div
+            class="certificate"
+            style="
+              background-color: rgba(255, 255, 255, 0.95);
+              border-radius: 8px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+              overflow: hidden;
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+            "
+          >
+            <a
+              href="images/certificate/CPROG.jpg"
+              target="_blank"
+              style="text-decoration: none; color: inherit; display: block"
+            >
+              <img
+                src="images/certificate/prepinsta.jpg"
+                alt="C Programming"
+                style="
+                  width: 100%;
+                  height: auto;
+                  display: block;
+                  border-bottom: 1px solid #ddd;
+                "
+              />
+              <div style="padding: 15px; text-align: center">
+                <span style="font-size: 1.1em; color: #0056b3; font-weight: 700"
+                  >C Programming</span
+                >
+              </div>
+            </a>
+          </div>
+          <div
+            class="certificate"
+            style="
+              background-color: rgba(255, 255, 255, 0.95);
+              border-radius: 8px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+              overflow: hidden;
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+            "
+          >
+            <a
+              href="images/certificate/cybersecurity fundamental.jpg"
+              target="_blank"
+              style="text-decoration: none; color: inherit; display: block"
+            >
+              <img
+                src="images/certificate/ibm.jpg"
+                alt="cybersecurity fundamental"
+                style="
+                  width: 100%;
+                  height: auto;
+                  display: block;
+                  border-bottom: 1px solid #ddd;
+                "
+              />
+              <div style="padding: 15px; text-align: center">
+                <span style="font-size: 1.1em; color: #0056b3; font-weight: 700"
+                  >Cybersecurity Fundamentals</span
+                >
+              </div>
+            </a>
+          </div>
+          <div
+            class="certificate"
+            style="
+              background-color: rgba(255, 255, 255, 0.95);
+              border-radius: 8px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+              overflow: hidden;
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+            "
+          >
+            <a
+              href="images/certificate/certificate_Data Science_564578.pdf"
+              target="_blank"
+              style="text-decoration: none; color: inherit; display: block"
+            >
+              <img
+                src="images/certificate/prepinsta.jpg"
+                alt="Data Science"
+                style="
+                  width: 100%;
+                  height: auto;
+                  display: block;
+                  border-bottom: 1px solid #ddd;
+                "
+              />
+              <div style="padding: 15px; text-align: center">
+                <span style="font-size: 1.1em; color: #0056b3; font-weight: 700"
+                  >Data Science</span
+                >
+              </div>
+            </a>
+          </div>
+          <div
+            class="certificate"
+            style="
+              background-color: rgba(255, 255, 255, 0.95);
+              border-radius: 8px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+              overflow: hidden;
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+            "
+          >
+            <a
+              href="images/certificate/certificate_First Naukri_564578.pdf"
+              target="_blank"
+              style="text-decoration: none; color: inherit; display: block"
+            >
+              <img
+                src="images/certificate/prepinsta.jpg"
+                alt="First Naukri"
+                style="
+                  width: 100%;
+                  height: auto;
+                  display: block;
+                  border-bottom: 1px solid #ddd;
+                "
+              />
+              <div style="padding: 15px; text-align: center">
+                <span style="font-size: 1.1em; color: #0056b3; font-weight: 700"
+                  >First Naukri</span
+                >
+              </div>
+            </a>
+          </div>
+          <div
+            class="certificate"
+            style="
+              background-color: rgba(255, 255, 255, 0.95);
+              border-radius: 8px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+              overflow: hidden;
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+            "
+          >
+            <a
+              href="images/certificate/certificate_AMCAT Course_564578.pdf"
+              target="_blank"
+              style="text-decoration: none; color: inherit; display: block"
+            >
+              <img
+                src="images/certificate/prepinsta.jpg"
+                alt="AMCAT Course"
+                style="
+                  width: 100%;
+                  height: auto;
+                  display: block;
+                  border-bottom: 1px solid #ddd;
+                "
+              />
+              <div style="padding: 15px; text-align: center">
+                <span style="font-size: 1.1em; color: #0056b3; font-weight: 700"
+                  >AMCAT Course</span
+                >
+              </div>
+            </a>
+          </div>
+          <div
+            class="certificate"
+            style="
+              background-color: rgba(255, 255, 255, 0.95);
+              border-radius: 8px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+              overflow: hidden;
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+            "
+          >
+            <a
+              href="images/certificate/certificate_Tableau_564578 (1).pdf"
+              target="_blank"
+              style="text-decoration: none; color: inherit; display: block"
+            >
+              <img
+                src="images/certificate/prepinsta.jpg"
+                alt="Tableau"
+                style="
+                  width: 100%;
+                  height: auto;
+                  display: block;
+                  border-bottom: 1px solid #ddd;
+                "
+              />
+              <div style="padding: 15px; text-align: center">
+                <span style="font-size: 1.1em; color: #0056b3; font-weight: 700"
+                  >Tableau</span
+                >
+              </div>
+            </a>
+          </div>
+          <div
+            class="certificate"
+            style="
+              background-color: rgba(255, 255, 255, 0.95);
+              border-radius: 8px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+              overflow: hidden;
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+            "
+          >
+            <a
+              href="images/certificate/agnirava.jpg"
+              target="_blank"
+              style="text-decoration: none; color: inherit; display: block"
+            >
+              <img
+                src="images/certificate/agnirava logo.jpg"
+                alt="The Agnirva Space Internship Program"
+                style="
+                  width: 100%;
+                  height: auto;
+                  display: block;
+                  border-bottom: 1px solid #ddd;
+                "
+              />
+              <div style="padding: 15px; text-align: center">
+                <span style="font-size: 1.1em; color: #0056b3; font-weight: 700"
+                  >The Agnirva Space Internship Program</span
+                >
+              </div>
+            </a>
+          </div>
+          <div
+            class="certificate"
+            style="
+              background-color: rgba(255, 255, 255, 0.95);
+              border-radius: 8px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+              overflow: hidden;
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+            "
+          >
+            <a
+              href="images/certificate/tata jobsim.jpg"
+              target="_blank"
+              style="text-decoration: none; color: inherit; display: block"
+            >
+              <img
+                src="images/certificate/tata'.png"
+                alt="Tata Group - Data Visualisation: Empowering Business with Effective Insights Job Simulation"
+                style="
+                  width: 100%;
+                  height: auto;
+                  display: block;
+                  border-bottom: 1px solid #ddd;
+                "
+              />
+              <div style="padding: 15px; text-align: center">
+                <span style="font-size: 1.1em; color: #0056b3; font-weight: 700"
+                  >Tata Group - Data Visualisation Job Simulation</span
+                >
+              </div>
+            </a>
+          </div>
         </div>
+      </div>
+    </section>
+    <section
+      id="resume"
+      style="
+        background-image: url('images/joao-ferrao-4YzrcDNcRVg-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        padding-top: 10vh;
+      "
+    >
+      <h2>Resume</h2>
+      <!-- <a href="https://drive.google.com/file/d/1ZMG1Nxw6roh5JL15M63DpWKGNqj1chVt/view?usp=sharing" download="Ayush_Vashisth_Resume.pdf">
+                <button class="download-btn">Download My CV</button>
+            </a> -->
+
+      <div class="resume-container">
+        <div class="button">
+          <a href="https://drive.google.com/file/d/1ZMG1Nxw6roh5JL15M63DpWKGNqj1chVt/view?usp=sharing" class="anchor" download="Ayush_Vashisth_Resume.pdf">
+            <span>Download CV</span>
+          </a>
+        </div>
+        <div class="pdf-container">
+          <iframe
+            src="images/ayush cv.pdf"
+            width="100%"
+            height="600px"
+          ></iframe>
+        </div>
+      </div>
     </section>
 
-    <section id="contact" style="background-image: url('images/pavan-trikutam-71CjSSB83Wo-unsplash.jpg'); background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; text-align: center; padding-top: 10vh;">
-    <div class="content" >
-        <div class="contact-container" style="background-color: white; color: black;">
-            <h2 style="font-family: 'Times New Roman', Times, serif;"> <strong>Contact Me </strong></h2>
-            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-                <input type="hidden" name="access_key" value="3ff02f10-ce5c-4b13-86c4-d283b509f30c">
-                <input type="hidden" name="_template" value="box">
-                <input type="hidden" name="_subject" value="New Portfolio Message">
-                <label for="name" style="font-family: 'Times New Roman', Times, serif;">Name:</label>
-                <input type="text" id="name" name="name" required style="background-color: white;color: black;">
-                <label for="email" style="font-family: 'Times New Roman', Times, serif;">Email:</label>
-                <input type="email" id="email" name="email" required style="background-color: white;color: black;" >
-                <label for="subject" style="font-family: 'Times New Roman', Times, serif;">Subject:</label>
-                <input type="text" id="subject" name="subject" required style="background-color: white; color: black;">
-                <label for="message" style="font-family: 'Times New Roman', Times, serif;">Message:</label>
-                <textarea id="message" name="message" rows="4" required style="background-color: white; color: black;"></textarea>
-                <button type="submit" style="font-family: 'Times New Roman', Times, serif;">Send Message</button>
-            </form>
+    <section
+      id="contact"
+      style="
+        background-image: url('images/pavan-trikutam-71CjSSB83Wo-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        padding-top: 10vh;
+      "
+    >
+      <div class="content">
+        <div
+          class="contact-container"
+          style="background-color: white; color: black"
+        >
+          <h2 style="font-family: 'Times New Roman', Times, serif">
+            <strong>Contact Me </strong>
+          </h2>
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="contact-form"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="3ff02f10-ce5c-4b13-86c4-d283b509f30c"
+            />
+            <input type="hidden" name="_template" value="box" />
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Portfolio Message"
+            />
+            <label
+              for="name"
+              style="font-family: 'Times New Roman', Times, serif"
+              >Name:</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              style="background-color: white; color: black"
+            />
+            <label
+              for="email"
+              style="font-family: 'Times New Roman', Times, serif"
+              >Email:</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              style="background-color: white; color: black"
+            />
+            <label
+              for="subject"
+              style="font-family: 'Times New Roman', Times, serif"
+              >Subject:</label
+            >
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              required
+              style="background-color: white; color: black"
+            />
+            <label
+              for="message"
+              style="font-family: 'Times New Roman', Times, serif"
+              >Message:</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              required
+              style="background-color: white; color: black"
+            ></textarea>
+            <button
+              type="submit"
+              style="font-family: 'Times New Roman', Times, serif"
+            >
+              Send Message
+            </button>
+          </form>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const sideNav = document.getElementById('sideNav');
-            const menuIcon = document.querySelector('.menu-icon');
-            const sections = document.querySelectorAll('section');
-            const navLinks = document.querySelectorAll('.side-nav ul li a');
+      function scrollToProjects() {
+          document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
+      }
+      document.addEventListener("DOMContentLoaded", () => {
+        const sideNav = document.getElementById("sideNav");
+        const menuIcon = document.querySelector(".menu-icon");
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".side-nav ul li a");
 
-            // Toggle side navigation
-            function toggleNav() {
-                sideNav.classList.toggle('active');
+
+        // Toggle side navigation
+        function toggleNav() {
+          sideNav.classList.toggle("active");
+        }
+        window.toggleNav = toggleNav; // Make it globally accessible
+
+        // Intersection Observer for animations
+        const observerOptions = {
+          root: null,
+          rootMargin: "0px",
+          threshold: 0.2,
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("animate");
+            } else {
+              entry.target.classList.remove("animate");
             }
-            window.toggleNav = toggleNav; // Make it globally accessible
+          });
+        }, observerOptions);
 
-            // Intersection Observer for animations
-            const observerOptions = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.2
-            };
-
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('animate');
-                    } else {
-                        entry.target.classList.remove('animate');
-                    }
-                });
-            }, observerOptions);
-
-            sections.forEach(section => {
-                observer.observe(section);
-            });
-
-            // Smooth scrolling and active link highlighting
-            navLinks.forEach(link => {
-                link.addEventListener('click', (e) => {
-                    const targetId = link.getAttribute('href').substring(1);
-                    const targetSection = document.getElementById(targetId);
-
-                    if (targetSection) {
-                        e.preventDefault();
-                        window.scrollTo({
-                            top: targetSection.offsetTop,
-                            behavior: 'smooth'
-                        });
-                        sideNav.classList.remove('active'); // Close navbar on link click
-                    }
-                });
-            });
-
-            // Feedback form functionality
-            function submitFeedback() {
-                const feedback = document.getElementById("feedback").value;
-                if (feedback.trim() === "") {
-                    alert("Please enter your feedback.");
-                    return;
-                }
-                const mailtoLink = `mailto:ayushvashisth04@gmail.com?subject=Portfolio Feedback&body=${encodeURIComponent(feedback)}`;
-                window.location.href = mailtoLink;
-            }
-            window.submitFeedback = submitFeedback;
-
-            // Handle URL hash and page load
-            window.onload = function() {
-                const hash = window.location.hash;
-                if (hash && document.querySelector(hash)) {
-                    document.querySelector(hash).scrollIntoView({ behavior: 'smooth' });
-                } else {
-                    document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
-                }
-            };
+        sections.forEach((section) => {
+          observer.observe(section);
         });
-    </script>
-</body>
 
+        // Smooth scrolling and active link highlighting
+        navLinks.forEach((link) => {
+          link.addEventListener("click", (e) => {
+            const targetId = link.getAttribute("href").substring(1);
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+              e.preventDefault();
+              window.scrollTo({
+                top: targetSection.offsetTop,
+                behavior: "smooth",
+              });
+              sideNav.classList.remove("active"); // Close navbar on link click
+            }
+          });
+        });
+
+        // Feedback form functionality
+        function submitFeedback() {
+          const feedback = document.getElementById("feedback").value;
+          if (feedback.trim() === "") {
+            alert("Please enter your feedback.");
+            return;
+          }
+          const mailtoLink = `mailto:ayushvashisth04@gmail.com?subject=Portfolio Feedback&body=${encodeURIComponent(
+            feedback
+          )}`;
+          window.location.href = mailtoLink;
+        }
+        window.submitFeedback = submitFeedback;
+
+        // Handle URL hash and page load
+        window.onload = function () {
+          const hash = window.location.hash;
+          if (hash && document.querySelector(hash)) {
+            document.querySelector(hash).scrollIntoView({ behavior: "smooth" });
+          } else {
+            document
+              .getElementById("home")
+              .scrollIntoView({ behavior: "smooth" });
+          }
+        };
+      });
+    </script>
+  </body>
 </html>
